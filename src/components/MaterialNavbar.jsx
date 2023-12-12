@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import {
   Navbar,
   Collapse,
@@ -247,48 +248,59 @@ export function MaterialNavbar() {
   }
   window.addEventListener("scroll", changeColor)
   const bg = color ? "text-black" : "text-white"
-  const bg1 = color ? "text-white" : "text-black"
+  const bg1 = "text-black"
   return (
-    <Navbar className={`mx-auto px-20 py-2 sticky w-full z-20 top-0 start-0 end-0 ${color ? "bg-white" : "bg-transparent shadow-none"}`} style={{borderRadius: "0px", border: "none", position: "fixed", top: "0", right: "0", left: "0", transition: "background-color 0.35s linear"}}>
-      <div className="flex items-center justify-between text-blue-gray-900">
-        <img src={color ? Logo2 : Logo1} class="h-[4.5rem]" alt="Codex Logo"/>
-        <div className="hidden lg:block">
-          <NavList 
-          bg={bg}
-          bg1={bg1}/>
-        </div>
-        <div className="hidden gap-2 lg:flex text-black">
-          <Button variant="text" size="sm" color="blue-gray" className={`text-base ${bg}`}>
-            GET STARTED
-          </Button>
-          <Button variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF]">
-            MY COURSES
-          </Button>
-        </div>
-        <IconButton
-          variant="text"
-          color={color ? "black" : "white"}
-          className="lg:hidden"
-          onClick={() => setOpenNav(!openNav)}
-        >
-          {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-          ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-          )}
-        </IconButton>
-      </div>
-      <Collapse open={openNav} className={color ? "bg-white" : "bg-black"} style={{borderBottomRightRadius: "10px", borderBottomLeftRadius: "10px"}}>
-        <NavList bg={bg} bg1={bg}/>
-        <div className={`flex w-full flex-nowrap items-center gap-2 lg:hidden ${bg}`}>
-          <Button variant="outlined" size="sm" color="blue-gray" fullWidth className="text-base">
+    <Wrapper>
+      <Navbar id="nav" className={`mx-auto px-20 py-2 sticky w-full z-20 top-0 start-0 end-0 ${color ? "bg-white" : "bg-transparent shadow-none"}`} style={{borderRadius: "0px", border: "none", position: "fixed", top: "0", right: "0", left: "0", transition: "background-color 0.35s linear"}}>
+        <div className="flex items-center justify-between text-blue-gray-900">
+          <img src={color ? Logo2 : Logo1} class="h-[4.5rem]" alt="Codex Logo"/>
+          <div className="hidden lg:block">
+            <NavList 
+            bg={bg}
+            bg1={bg1}/>
+          </div>
+          <div className="hidden gap-2 lg:flex text-black">
+            <Button variant="text" size="sm" color="blue-gray" className={`text-base ${bg}`}>
               GET STARTED
-          </Button>
-          <Button variant="gradient" size="sm" fullWidth className="text-black text-base bg-[#00FFFF]">
-            MY COURSES
-          </Button>
+            </Button>
+            <Button variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF]">
+              MY COURSES
+            </Button>
+          </div>
+          <IconButton
+            variant="text"
+            color={color ? "black" : "white"}
+            className="lg:hidden"
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+            ) : (
+              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+            )}
+          </IconButton>
         </div>
-      </Collapse>
-    </Navbar>
+        <Collapse open={openNav} className={color ? "bg-white" : "bg-black"} style={{borderBottomRightRadius: "10px", borderBottomLeftRadius: "10px"}}>
+          <NavList bg={bg} bg1={bg}/>
+          <div className={`flex w-full flex-nowrap items-center gap-2 lg:hidden ${bg}`}>
+            <Button variant="outlined" size="sm" color="blue-gray" fullWidth className="text-base">
+                GET STARTED
+            </Button>
+            <Button variant="gradient" size="sm" fullWidth className="text-black text-base bg-[#00FFFF]">
+              MY COURSES
+            </Button>
+          </div>
+        </Collapse>
+      </Navbar>
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.section`
+  @media only screen and (max-width: 600px){
+      #nav{
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+  }
+`;

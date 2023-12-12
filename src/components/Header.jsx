@@ -11,13 +11,14 @@ const Header = () => {
       <div className="container">
         <h1 className="mb-3">CODING COURSE</h1>
         <h3>A place to learn programming & various other technologies,<br/> specifically and intensively in only one platform.</h3>
+        {/* BUTTONS */}
         <div>
-        <Button variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#00FFFF]">
-            JOIN NOW
-        </Button>
-        <Button variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#FFFFFF]">
-          FREE T-SHIRT
-        </Button>
+          <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#00FFFF]">
+              JOIN NOW
+          </Button>
+          <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#FFFFFF]">
+            FREE T-SHIRT
+          </Button>
         </div>
       </div>
     </Wrapper>
@@ -38,6 +39,7 @@ const Wrapper = styled.section`
     flex-direction: column;
     padding: 17rem 0;
     color: white;
+    margin: auto;
   }
   .container h1{
     font-family: 'Montserrat', sans-serif;
@@ -49,7 +51,19 @@ const Wrapper = styled.section`
     text-align: center;
     margin-bottom: 2rem;
   }
-
+  
+  @media only screen and (max-width: 600px){
+    .container h1{
+      font-size: 2rem;
+    }
+    .container h3{
+      font-size: 1rem;
+    }
+    #btn{
+      padding: 0.8rem;
+      margin: 0.5rem;
+    }
+  }
 `;
 
 export default Header
