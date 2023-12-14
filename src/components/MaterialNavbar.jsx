@@ -251,9 +251,9 @@ export function MaterialNavbar() {
   const bg1 = "text-black"
   return (
     <Wrapper>
-      <Navbar id="nav" className={`mx-auto px-20 py-2 sticky w-full z-20 top-0 start-0 end-0 ${color ? "bg-white" : "bg-transparent shadow-none"}`} style={{borderRadius: "0px", border: "none", position: "fixed", top: "0", right: "0", left: "0", transition: "background-color 0.35s linear"}}>
+      <Navbar id="nav" className={`mx-auto px-20 py-2 sticky w-full z-20 top-0 start-0 end-0 ${color ? "bg-white" : openNav ? "bg-black" : "bg-transparent shadow-none"}`} style={{borderRadius: "0px", border: "none", position: "fixed", top: "0", right: "0", left: "0", transition: "background-color 0.35s linear"}}>
         <div className="flex items-center justify-between text-blue-gray-900">
-          <img src={color ? Logo2 : Logo1} class="h-[4.5rem]" alt="Codex Logo"/>
+          <img src={color ? Logo2 : Logo1} class="h-[4.5rem]" alt="Codex Logo" href="/"/>
           <div className="hidden lg:block">
             <NavList 
             bg={bg}
@@ -280,10 +280,10 @@ export function MaterialNavbar() {
             )}
           </IconButton>
         </div>
-        <Collapse open={openNav} className={color ? "bg-white" : "bg-black"} style={{borderBottomRightRadius: "10px", borderBottomLeftRadius: "10px"}}>
+        <Collapse open={openNav} style={{borderBottomRightRadius: "10px", borderBottomLeftRadius: "10px"}}>
           <NavList bg={bg} bg1={bg}/>
           <div className={`flex w-full flex-nowrap items-center gap-2 lg:hidden ${bg}`}>
-            <Button variant="outlined" size="sm" color="blue-gray" fullWidth className="text-base">
+            <Button variant="outlined" size="sm" color="blue-gray" fullWidth className={`text-base border-${bg.slice(5)}`}>
                 GET STARTED
             </Button>
             <Button variant="gradient" size="sm" fullWidth className="text-black text-base bg-[#00FFFF]">

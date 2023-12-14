@@ -7,6 +7,12 @@
   1rem = 10px
   font-size: 62.5%;
 } */
+*{
+  box-sizing: border-box;
+}
+:root {
+  scroll-behavior: smooth;
+}
 
 body {
   height: 200vh;
