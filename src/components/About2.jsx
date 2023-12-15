@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import img from "../assets/course2.png"
 import {Button} from "@material-tailwind/react"
 
 const About2 = () => {
@@ -14,7 +15,7 @@ const About2 = () => {
                         </Button>
                 </div>
                 <div className="image">
-                        <img src="src/assets/course2.png" alt="Guy Doing Coding" />
+                        <img src={img} alt="Guy Doing Coding" />
                 </div>
             </div>
     </Wrapper>

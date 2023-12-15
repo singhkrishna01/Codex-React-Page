@@ -2,13 +2,14 @@ import React from 'react'
 import styled from "styled-components"
 import {Button} from "@material-tailwind/react"
 import { FaPaperPlane } from "react-icons/fa6";
+import img from "../assets/course1.png"
 
 const About = () => {
   return (
     <Wrapper id="about">
             <div className="container">
                 <div className="image">
-                        <img src="src/assets/course1.png" alt="Guy Doing Coding" />
+                        <img src={img} alt="Guy Doing Coding" />
                 </div>
                 <div className="Info">
                         <h1>Get access to learning</h1>
