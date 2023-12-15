@@ -31,6 +31,7 @@ import {
 } from "@heroicons/react/24/solid";
 import Logo1 from "../assets/codex.png"
 import Logo2 from "../assets/codex-black.png"
+import { GoBook } from "react-icons/go";
 
 const navListMenuItems1 = [
   {
@@ -165,7 +166,7 @@ function NavListMenu({head, no, bg, bg1}) {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className={`flex items-center gap-2 py-2 pr-4 font-medium text-lg ${bg}`}
+              className={`flex items-center gap-2 py-2 pr-4 font-medium text-lg ${bg} hover:text-[#00ffff]`}
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -208,7 +209,7 @@ function NavList({bg, bg1}) {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 text-lg">Home</ListItem>
+        <ListItem className={`flex items-center gap-2 py-2 pr-4 text-lg hover:text-[#00ffff]`}>Home</ListItem>
       </Typography>
       <NavListMenu head={"Pages"} no={"1"} bg={bg} bg1={bg1}/>
       <NavListMenu head={"Sections"} no={"2"} bg={bg} bg1={bg1}/>
@@ -220,7 +221,7 @@ function NavList({bg, bg1}) {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 text-lg">
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-lg hover:text-[#00ffff]">
           Contact Us
         </ListItem>
       </Typography>
@@ -257,14 +258,15 @@ export function MaterialNavbar() {
           <div className="hidden lg:block">
             <NavList 
             bg={bg}
-            bg1={bg1}/>
+            bg1={bg1}
+            />
           </div>
-          <div className="hidden gap-2 lg:flex text-black">
-            <Button variant="text" size="sm" color="blue-gray" className={`text-base ${bg}`}>
+          <div className="btns hidden gap-2 lg:flex text-black">
+            <Button variant="text" size="sm" color="blue-gray" className={`text-base ${bg} font-medium`}>
               GET STARTED
             </Button>
-            <Button variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF]">
-              MY COURSES
+            <Button id="courses" variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF] font-medium normal-case">
+              <GoBook size={24} style={{marginRight: "7px"}}/> My Courses
             </Button>
           </div>
           <IconButton
@@ -282,12 +284,12 @@ export function MaterialNavbar() {
         </div>
         <Collapse open={openNav} style={{borderBottomRightRadius: "10px", borderBottomLeftRadius: "10px"}}>
           <NavList bg={bg} bg1={bg}/>
-          <div className={`flex w-full flex-nowrap items-center gap-2 lg:hidden ${bg}`}>
-            <Button variant="outlined" size="sm" color="blue-gray" fullWidth className={`text-base border-${bg.slice(5)}`}>
+          <div className={`btns flex w-full flex-nowrap items-center gap-2 lg:hidden ${bg}`}>
+            <Button variant="outlined" size="sm" color="blue-gray" fullWidth className={`text-base border-${bg.slice(5)} font-medium`}>
                 GET STARTED
             </Button>
-            <Button variant="gradient" size="sm" fullWidth className="text-black text-base bg-[#00FFFF]">
-              MY COURSES
+            <Button id="courses-md" variant="gradient" size="sm" fullWidth className="text-black text-base bg-[#00FFFF] font-medium">
+              <GoBook size={24} style={{marginRight: "7px"}}/>My Courses
             </Button>
           </div>
         </Collapse>
@@ -297,6 +299,17 @@ export function MaterialNavbar() {
 }
 
 const Wrapper = styled.section`
+  .btns > #courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+  }
+  .btns > #courses-md{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   @media only screen and (max-width: 600px){
       #nav{
         padding-left: 2rem;
