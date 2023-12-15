@@ -7,6 +7,7 @@ import FreeTshirt from "./components/FreeTshirt";
 import Header from "./components/Header";
 import TechList from "./components/TechList";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Benefits />
       <FreeTshirt />
       <Testimonials />
+      <Footer />
     </>
   )
 }
