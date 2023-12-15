@@ -3,8 +3,10 @@ import './App.css'
 import About from "./components/About";
 import About2 from "./components/About2";
 import Benefits from "./components/Benefits";
+import FreeTshirt from "./components/FreeTshirt";
 import Header from "./components/Header";
 import TechList from "./components/TechList";
+import Testimonials from "./components/Testimonials";
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
       <About />
       <About2 />
       <Benefits />
+      <FreeTshirt />
+      <Testimonials />
     </>
   )
 }

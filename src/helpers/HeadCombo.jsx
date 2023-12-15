@@ -1,10 +1,10 @@
 import React from 'react'
 import { styled } from 'styled-components';
 
-const HeadCombo = ({heading, description}) => {
+const HeadCombo = ({heading, description, color}) => {
   return (
           <Cover>
-                <header className="text-center mx-auto mb-5">
+                <header className={`text-center mx-auto mb-5 ${color}`}>
                         <h1>{heading}</h1>
                         <hr class="w-48 h-1 mx-auto my-2 bg-[#00ffff] border-0 rounded md:my-8 dark:bg-gray-700" />
                         <h3>{description}</h3>

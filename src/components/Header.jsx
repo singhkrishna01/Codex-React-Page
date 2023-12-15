@@ -17,7 +17,7 @@ const Header = () => {
               JOIN NOW
           </Button>
           <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#FFFFFF]">
-            FREE TSHIRT
+            <a href="#freeT">Free Tshirt</a>
           </Button>
         </div>
         {/* MASTHEAD */}
