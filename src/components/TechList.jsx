@@ -2,24 +2,36 @@ import React from 'react'
 import styled from "styled-components"
 import HeadCombo from '../helpers/HeadCombo'
 import TechBox from '../helpers/TechBox'
+import html from "../assets/logos/html.png"
+import css from "../assets/logos/css.png"
+import js from "../assets/logos/js.png"
+import sass from "../assets/logos/sass.png"
+import opencv from "../assets/logos/opencv.png"
+import npm from "../assets/logos/npm.png"
+import react from "../assets/logos/react.png"
+import docker from "../assets/logos/docker.png"
+import firebase from "../assets/logos/firebase.png"
+import github from "../assets/logos/github.png"
+import bootstrap from "../assets/logos/bootstrap.png"
+import nodejs from "../assets/logos/nodejs.png"
 
 const TechList = () => {
   return (
     <Wrapper id="tech">
         <HeadCombo heading={"Material Lists"} description={"12+ technologies to be studied with more than 1000 material lists."} />
         <div className="container">
-          <TechBox name={"HTML"}/>
-          <TechBox name={"CSS"}/> 
-          <TechBox name={"JS"}/> 
-          <TechBox name={"Sass"}/> 
-          <TechBox name={"OpenCV"}/> 
-          <TechBox name={"NPM"}/> 
-          <TechBox name={"React"}/> 
-          <TechBox name={"Docker"}/> 
-          <TechBox name={"Firebase"}/> 
-          <TechBox name={"Github"} /> 
-          <TechBox name={"BootStrap"} /> 
-          <TechBox name={"NodeJS"} /> 
+          <TechBox name={"HTML"} img={<img src={html} alt="card-image" className="h-20 w-24"/>}/>
+          <TechBox name={"CSS"} img={<img src={css} alt="card-image" className="h-20 w-24"/>}/> 
+          <TechBox name={"JS"} img={<img src={js} alt="card-image" className="h-20 w-24"/>}/> 
+          <TechBox name={"Sass"} img={<img src={sass} alt="card-image" className="h-20 w-24"/>}/> 
+          <TechBox name={"OpenCV"} img={<img src={opencv} alt="card-image" className="h-20 w-24"/>}/> 
+          <TechBox name={"NPM"} img={<img src={npm} alt="card-image" className="h-20 w-24"/>}/> 
+          <TechBox name={"React"} img={<img src={react} alt="card-image" className="h-20 w-24"/>}/> 
+          <TechBox name={"Docker"} img={<img src={docker} alt="card-image" className="h-20 w-24"/>}/> 
+          <TechBox name={"Firebase"} img={<img src={firebase} alt="card-image" className="h-20 w-24"/>}/> 
+          <TechBox name={"Github"} img={<img src={github} alt="card-image" className="h-20 w-24"/>}/> 
+          <TechBox name={"BootStrap"} img={<img src={bootstrap} alt="card-image" className="h-20 w-24"/>}/> 
+          <TechBox name={"NodeJS"} img={<img src={nodejs} alt="card-image" className="h-20 w-24"/>}/> 
         </div>
     </Wrapper>
   )

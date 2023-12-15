@@ -18,11 +18,7 @@ const TestBox = ({name, review, img, star}) => {
                 <blockquote className="review rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
                         <div className="LStar flex items-center gap-4">
                                 {/* IMAGE LOGO */}
-                                <img
-                                alt="Man"
-                                src={`src/assets/clients/${img}.jpg`}
-                                className="h-14 w-14 rounded-full object-cover"
-                                />
+                                {img}
                                 <div>
                                 {/* STARS */}
                                 <div className="flex justify-center gap-0.5 text-green-500">
