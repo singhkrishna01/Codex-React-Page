@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "@material-tailwind/react";
-import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6"
+import { IoPersonCircle } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -19,15 +21,15 @@ const Footer = () => {
             <h3 className="footer-heading">
               Subscribe to get important updates
             </h3>
-            <form action="https://formspree.io/f/xaygjldr" method="POST">
+            <form action="https://formspree.io/f/mnqeanzy" method="POST">
               <input type="email" name="email" placeholder="E-mail" />
               <Button
                 id="btn"
                 variant="gradient"
                 size="sm"
-                className="p-4 mx-4 text-black text-base bg-[#FFFFFF]"
+                className="p-4 mx-4 text-black text-base bg-[#FFFFFF] transform transition duration-500 hover:scale-110"
               >
-                Suscribe
+                Subscribe
               </Button>
             </form>
           </div>
@@ -36,29 +38,29 @@ const Footer = () => {
             <div className="footer-social--icons">
               <div>
                 <a
-                  href="https://discord.com/users/600365423476867073"
+                  href="https://kshitijsinghbisht.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaDiscord className="icons" />
+                  <IoPersonCircle className="icons" />
                 </a>
               </div>
               <div>
                 <a
-                  href="https://www.instagram.com/kshitij_izh/"
+                  href="https://twitter.com/stoickshitij"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaInstagram className="icons" />
+                  <FaXTwitter className="icons" />
                 </a>
               </div>
               <div>
                 <a
-                  href="https://www.youtube.com/@SSENSE"
+                  href="https://github.com/Hailex798"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaYoutube className="icons" />
+                  <FaGithub className="icons" />
                 </a>
               </div>
             </div>
@@ -201,6 +203,7 @@ const Wrapper = styled.section`
         border-radius: 50%;
         border: 2px solid #000000;
         background-color: black;
+        transition: all 5 ease-in-out;
 
         .icons {
           color: white;
@@ -208,6 +211,9 @@ const Wrapper = styled.section`
           position: relative;
           cursor: pointer;
         }
+      }
+      div: hover{
+        transform: scale(1.1);
       }
     }
   }

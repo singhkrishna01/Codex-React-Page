@@ -13,10 +13,10 @@ const Header = () => {
         <h3>A place to learn programming & various other technologies,<br/> specifically and intensively in only one platform.</h3>
         {/* BUTTONS */}
         <div>
-          <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#00FFFF]">
+          <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#00FFFF] transform transition duration-500 hover:scale-110">
               JOIN NOW
           </Button>
-          <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#FFFFFF]">
+          <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#FFFFFF] transform transition duration-500 hover:scale-110">
             <a href="#freeT">Free Tshirt</a>
           </Button>
         </div>

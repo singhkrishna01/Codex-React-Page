@@ -14,7 +14,7 @@ const About = () => {
                 <div className="Info">
                         <h1>Get access to learning</h1>
                         <h3>Each participant will get an account before learning begins which will be used to access learning material that is in the Onekit website.</h3>
-                        <Button id="btn" variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF]  font-medium normal-case">
+                        <Button id="btn" variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF] font-medium normal-case transform transition duration-500 hover:scale-110">
                                 <FaPaperPlane size={15} style={{marginRight: "7px"}}/> Try for Free
                         </Button>
                 </div>

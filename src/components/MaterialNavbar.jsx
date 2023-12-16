@@ -265,7 +265,7 @@ export function MaterialNavbar() {
             <Button variant="text" size="sm" color="blue-gray" className={`text-base ${bg} font-medium`}>
               GET STARTED
             </Button>
-            <Button id="courses" variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF] font-medium normal-case">
+            <Button id="courses" variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF] font-medium normal-case transform transition duration-500 hover:scale-110">
               <GoBook size={24} style={{marginRight: "7px"}}/> My Courses
             </Button>
           </div>
@@ -288,7 +288,7 @@ export function MaterialNavbar() {
             <Button variant="outlined" size="sm" color="blue-gray" fullWidth className={`text-base border-${bg.slice(5)} font-medium`}>
                 GET STARTED
             </Button>
-            <Button id="courses-md" variant="gradient" size="sm" fullWidth className="text-black text-base bg-[#00FFFF] font-medium">
+            <Button id="courses-md" variant="gradient" size="sm" fullWidth className="text-black text-base bg-[#00FFFF] font-medium transform transition duration-500 hover:scale-110">
               <GoBook size={24} style={{marginRight: "7px"}}/>My Courses
             </Button>
           </div>
