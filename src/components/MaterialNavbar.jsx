@@ -254,7 +254,7 @@ export function MaterialNavbar() {
     <Wrapper>
       <Navbar id="nav" className={`mx-auto px-20 py-2 sticky w-full z-20 top-0 start-0 end-0 ${color ? "bg-white" : openNav ? "bg-black" : "bg-transparent shadow-none"}`} style={{borderRadius: "0px", border: "none", position: "fixed", top: "0", right: "0", left: "0", transition: "background-color 0.35s linear"}}>
         <div className="flex items-center justify-between text-blue-gray-900">
-          <img src={color ? Logo2 : Logo1} class="h-[4.5rem]" alt="Codex Logo" href="/"/>
+          <a href="#"><img src={color ? Logo2 : Logo1} class="h-[4.5rem]" alt="Codex Logo" href="#"/></a>
           <div className="hidden lg:block">
             <NavList 
             bg={bg}
@@ -263,7 +263,7 @@ export function MaterialNavbar() {
           </div>
           <div className="btns hidden gap-2 lg:flex text-black">
             <Button variant="text" size="sm" color="blue-gray" className={`text-base ${bg} font-medium`}>
-              GET STARTED
+              <a href="#about">GET STARTED</a>
             </Button>
             <Button id="courses" variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF] font-medium normal-case transform transition duration-500 hover:scale-110">
               <GoBook size={24} style={{marginRight: "7px"}}/> My Courses

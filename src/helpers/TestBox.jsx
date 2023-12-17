@@ -4,7 +4,7 @@ import styled from "styled-components"
 const TestBox = ({name, review, img, star}) => {
         let fields = [];
         for (let i = 1; i <= star; i++) {
-          fields.push(            <svg
+          fields.push(<svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
                 viewBox="0 0 20 20"
@@ -21,7 +21,7 @@ const TestBox = ({name, review, img, star}) => {
                                 {img}
                                 <div>
                                 {/* STARS */}
-                                <div className="flex justify-center gap-0.5 text-green-500">
+                                <div className="flex justify-center gap-0.5 text-[#002a76]">
                                         {fields}
                                 </div>
                                 {/* NAME */}
