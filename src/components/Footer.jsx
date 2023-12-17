@@ -16,6 +16,13 @@ const Footer = () => {
             <p>
             Embark on a transformative journey of mastery with Codex & unparalleled online excellence.
             </p>
+            <ul className="my-3 text-white">
+              <li className="hover:text-[#00ffff] cursor-pointer font-medium py-1">Browse Courses</li>
+              <li className="hover:text-[#00ffff] cursor-pointer font-medium py-1">Careers</li>
+              <li className="hover:text-[#00ffff] cursor-pointer font-medium py-1">BootCamps</li>
+              <li className="hover:text-[#00ffff] cursor-pointer font-medium py-1">Affiliates</li>
+              <li className="hover:text-[#00ffff] cursor-pointer font-medium py-1">Help Center</li>
+            </ul>
           </div>
           <div className="footer-subscribe">
             <h3 className="footer-heading">
@@ -35,7 +42,7 @@ const Footer = () => {
           </div>
           <div className="footer-social">
             <h3 className="footer-heading">Follow Us</h3>
-            <div className="footer-social--icons">
+            <div className="footer-social--icons lg:scale-105">
               <div>
                 <a
                   href="https://kshitijsinghbisht.netlify.app/"
@@ -208,7 +215,7 @@ const Wrapper = styled.section`
 
         .icons {
           color: white;
-          font-size: 2.4rem;
+          font-size: 1.85rem;
           position: relative;
           cursor: pointer;
         }
@@ -229,7 +236,7 @@ const Wrapper = styled.section`
   }
 
   .footer-bottom--section {
-    padding-top: 9rem;
+    padding-top: 4rem;
     color: white;
 
     hr {
@@ -255,7 +262,7 @@ const Wrapper = styled.section`
     }
 
     footer {
-      padding: 9rem 0 9rem 0;
+      padding: 4rem 0 4rem 0;
     }
 
     .footer-bottom--section {
