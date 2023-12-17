@@ -14,7 +14,7 @@ const Header = () => {
         {/* BUTTONS */}
         <div>
           <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#00FFFF] transform transition duration-500 hover:scale-110">
-              JOIN NOW
+              <a href="#about">JOIN NOW</a>
           </Button>
           <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#FFFFFF] transform transition duration-500 hover:scale-110">
             <a href="#freeT">Free Tshirt</a>

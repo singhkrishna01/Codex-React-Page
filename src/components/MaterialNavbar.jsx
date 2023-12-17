@@ -222,7 +222,7 @@ function NavList({bg, bg1}) {
         className="font-medium"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 text-lg hover:text-[#00ffff]">
-          Contact Us
+          <a href="#footer">Contact Us</a>
         </ListItem>
       </Typography>
     </List>

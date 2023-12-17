@@ -7,7 +7,7 @@ import { IoPersonCircle } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <Wrapper>
+    <Wrapper id="footer">
       {/* Main Footer Section */}
       <footer>
         <div className="container grid grid-four-column">
@@ -76,11 +76,11 @@ const Footer = () => {
           <hr color="black" />
           <div className="container grid grid-two-column ">
             <p className="footer-heading">
-              @{new Date().getFullYear()} Ssyclr. All Rights Reserved
+              @{new Date().getFullYear()} Codex. All Rights Reserved
             </p>
             <div>
-              <p>PRIVACY POLICY</p>
-              <p>TERMS & CONDITIONS</p>
+              <p><a href="https://www.edx.org/edx-privacy-policy">PRIVACY POLICY</a></p>
+              <p><a href="https://www.edx.org/edx-terms-service">TERMS & CONDITIONS</a></p>
             </div>
           </div>
         </div>
@@ -132,6 +132,7 @@ const Wrapper = styled.section`
   .container {
     max-width: 125rem;
     margin: 0 auto;
+    padding: 0 2.5rem;
   }
   .grid {
     display: grid;

@@ -39,7 +39,7 @@ const Testimonials = () => {
 };
 
 const Wrapper = styled.section`
-  padding: 5rem;
+  padding: 5rem 1rem;
 `;
 
 export default Testimonials;
