@@ -7,14 +7,14 @@ const About2 = () => {
   return (
     <Wrapper id="about2">
             <div className="container">
-                <div className="Info">
+                <div className="Info" data-aos="fade-right">
                         <h1>Learning with a Mentor</h1>
                         <h3>The teaching team will assist specifically and intensively so that if participants experience obstacles in learning will be personally assisted directly.</h3>
                         <Button id="btn" variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF] font-medium normal-case transform transition duration-500 hover:scale-110">
                                 What's our Benefit?
                         </Button>
                 </div>
-                <div className="image">
+                <div className="image" data-aos="fade-left">
                         <img src={img} alt="Guy Doing Coding" />
                 </div>
             </div>

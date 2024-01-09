@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <Wrapper>
       <MaterialNavbar/>
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <h1 className="mb-3">CODING COURSE</h1>
         <h3>A place to learn programming & various other technologies,<br/> specifically and intensively in only one platform.</h3>
         {/* BUTTONS */}

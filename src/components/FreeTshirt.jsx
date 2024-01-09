@@ -9,7 +9,7 @@ const FreeTshirt = () => {
         <Wrapper id="freeT">
                 <div className="py-24">
                         <HeadCombo heading={"Free Tshirt"} description={"Free tshirt after joining Membership program"} color={"text-white"}/>
-                        <div className="image flex justify-center">
+                        <div className="image flex justify-center" data-aos="zoom-in">
                                 <img src={tshirt} alt="T-shirt" />
                         </div>
                 </div>

@@ -2,10 +2,10 @@ import React from 'react'
 import {Card, CardBody, Typography} from "@material-tailwind/react";
 import styled from "styled-components"
 
-const TechBox = ({name, img}) => {
+const TechBox = ({name, img, anim, delay}) => {
   return (
           <Wrapper>
-                <Card id="card" className="mt-6 w-48 h-36 p-4 text-center shadow-2xl">
+                <Card id="card" className="mt-6 w-48 h-36 p-4 text-center shadow-2xl" data-aos={`${anim}`} data-aos-delay={`${delay}`} >
                         <div className="ml-auto mr-auto">
                                 {img}
                         </div>

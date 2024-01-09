@@ -20,18 +20,18 @@ const TechList = () => {
     <Wrapper id="tech">
         <HeadCombo heading={"Material Lists"} description={"12+ technologies to be studied with more than 1000 material lists."} />
         <div className="container">
-          <TechBox name={"HTML"} img={<img src={html} alt="card-image" className="h-20 w-24"/>}/>
-          <TechBox name={"CSS"} img={<img src={css} alt="card-image" className="h-20 w-24"/>}/> 
-          <TechBox name={"JS"} img={<img src={js} alt="card-image" className="h-20 w-24"/>}/> 
-          <TechBox name={"Sass"} img={<img src={sass} alt="card-image" className="h-20 w-24"/>}/> 
-          <TechBox name={"OpenCV"} img={<img src={opencv} alt="card-image" className="h-20 w-24"/>}/> 
-          <TechBox name={"NPM"} img={<img src={npm} alt="card-image" className="h-20 w-24"/>}/> 
-          <TechBox name={"React"} img={<img src={react} alt="card-image" className="h-20 w-24"/>}/> 
-          <TechBox name={"Docker"} img={<img src={docker} alt="card-image" className="h-20 w-24"/>}/> 
-          <TechBox name={"Firebase"} img={<img src={firebase} alt="card-image" className="h-20 w-24"/>}/> 
-          <TechBox name={"Github"} img={<img src={github} alt="card-image" className="h-20 w-24"/>}/> 
-          <TechBox name={"BootStrap"} img={<img src={bootstrap} alt="card-image" className="h-20 w-24"/>}/> 
-          <TechBox name={"NodeJS"} img={<img src={nodejs} alt="card-image" className="h-20 w-24"/>}/> 
+          <TechBox name={"HTML"} img={<img src={html} alt="card-image" className="h-20 w-24"/>} anim={"fade-up"}/>
+          <TechBox name={"CSS"} img={<img src={css} alt="card-image" className="h-20 w-24"/>} anim={"fade-up"}/> 
+          <TechBox name={"JS"} img={<img src={js} alt="card-image" className="h-20 w-24"/>} anim={"fade-up"}/> 
+          <TechBox name={"Sass"} img={<img src={sass} alt="card-image" className="h-20 w-24"/>} anim={"fade-up"}/> 
+          <TechBox name={"OpenCV"} img={<img src={opencv} alt="card-image" className="h-20 w-24"/>} anim={"fade-up"}/> 
+          <TechBox name={"NPM"} img={<img src={npm} alt="card-image" className="h-20 w-24"/>} anim={"fade-up"}/> 
+          <TechBox name={"React"} img={<img src={react} alt="card-image" className="h-20 w-24"/>} anim={"fade-up"}/> 
+          <TechBox name={"Docker"} img={<img src={docker} alt="card-image" className="h-20 w-24"/>} anim={"fade-up"}/> 
+          <TechBox name={"Firebase"} img={<img src={firebase} alt="card-image" className="h-20 w-24"/>} anim={"fade-up"}/> 
+          <TechBox name={"Github"} img={<img src={github} alt="card-image" className="h-20 w-24"/>} anim={"fade-up"}/> 
+          <TechBox name={"BootStrap"} img={<img src={bootstrap} alt="card-image" className="h-20 w-24"/>} anim={"fade-up"}/> 
+          <TechBox name={"NodeJS"} img={<img src={nodejs} alt="card-image" className="h-20 w-24"/>} anim={"fade-up"}/> 
         </div>
     </Wrapper>
   )

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components"
 
-const TestBox = ({name, review, img, star}) => {
+const TestBox = ({name, review, img, star, anim}) => {
         let fields = [];
         for (let i = 1; i <= star; i++) {
           fields.push(<svg
@@ -15,7 +15,7 @@ const TestBox = ({name, review, img, star}) => {
         }
   return (
         <Wrapper>
-                <blockquote className="review rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                <blockquote data-aos={`${anim}`} className="review rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
                         <div className="LStar flex items-center gap-4">
                                 {/* IMAGE LOGO */}
                                 {img}
@@ -33,7 +33,6 @@ const TestBox = ({name, review, img, star}) => {
                                 {review}
                         </p>
                 </blockquote>
-
         </Wrapper>
   );
 };

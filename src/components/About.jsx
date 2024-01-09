@@ -8,10 +8,10 @@ const About = () => {
   return (
     <Wrapper id="about">
             <div className="container">
-                <div className="image">
+                <div className="image" data-aos="fade-right">
                         <img src={img} alt="Guy Doing Coding" />
                 </div>
-                <div className="Info">
+                <div className="Info" data-aos="fade-left">
                         <h1>Get access to learning</h1>
                         <h3>Each participant will get an account before learning begins which will be used to access learning material that is in the Onekit website.</h3>
                         <Button id="btn" variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF] font-medium normal-case transform transition duration-500 hover:scale-110">

@@ -6,7 +6,7 @@ const InfoCard = ({heading, description, icon}) => {
         console.log(icon)
   return (
     <Cover id="InfoCard">
-            <div className="card shadow-2xl px-8 rounded-2xl h-28">
+            <div className="card shadow-2xl px-8 rounded-2xl h-28" data-aos="zoom-in-up">
                 {/* LOGO + HEADING */}
                 <div className="keyPoint mb-1">
                         {icon}

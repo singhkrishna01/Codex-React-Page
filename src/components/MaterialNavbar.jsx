@@ -241,7 +241,7 @@ export function MaterialNavbar() {
   const [color, setColor] = React.useState(false)
   const changeColor = () => {
     let bodyTopPos = window.scrollY;
-    if(bodyTopPos >= 100){
+    if(bodyTopPos >= 130){
       setColor(true)
     }else{
       setColor(false)
