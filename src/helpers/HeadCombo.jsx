@@ -24,6 +24,9 @@ const Cover = styled.section`
         font-weight: 400;
         font-size: 1.2rem;
       }
+      hr{
+        margin-top: 1.4rem;
+      }
       @media only screen and (max-width: 600px){
         hr{
           width: 160px;

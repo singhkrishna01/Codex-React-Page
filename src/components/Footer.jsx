@@ -17,7 +17,7 @@ const Footer = () => {
             Embark on a transformative journey of mastery with Codex & unparalleled online excellence.
             </p>
             <ul className="my-3 text-white">
-              <li className="hover:text-[#00ffff] cursor-pointer font-medium py-1">Browse Courses</li>
+              <li className="hover:text-[#00ffff] cursor-pointer font-medium py-1"><a href="#about">Browse Courses</a></li>
               <li className="hover:text-[#00ffff] cursor-pointer font-medium py-1">Careers</li>
               <li className="hover:text-[#00ffff] cursor-pointer font-medium py-1">BootCamps</li>
               <li className="hover:text-[#00ffff] cursor-pointer font-medium py-1">Affiliates</li>

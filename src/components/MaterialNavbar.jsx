@@ -266,7 +266,8 @@ export function MaterialNavbar() {
               <a href="#about">GET STARTED</a>
             </Button>
             <Button id="courses" variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF] font-medium normal-case transform transition duration-500 hover:scale-110">
-              <GoBook size={24} style={{marginRight: "7px"}}/> My Courses
+              <GoBook size={24} style={{marginRight: "7px"}}/> 
+              <a href="#tech">My Courses</a>
             </Button>
           </div>
           <IconButton

@@ -136,4 +136,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Header
+export default Header;
