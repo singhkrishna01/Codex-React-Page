@@ -6,17 +6,17 @@ import { MaterialNavbar } from './MaterialNavbar';
 
 const Header = () => {
   return (
-    <Wrapper>
+    <Wrapper id="header">
       <MaterialNavbar/>
       <div className="container" data-aos="fade-up">
         <h1 className="mb-3">CODING COURSE</h1>
         <h3>A place to learn programming & various other technologies,<br/> specifically and intensively in only one platform.</h3>
         {/* BUTTONS */}
         <div>
-          <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#00FFFF] transform transition duration-500 hover:scale-110">
+          <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#00FFFF] transform transition duration-500 hover:scale-110" data-aos="zoom-in-down" data-aos-offset="100" data-aos-duration="1000">
               <a href="#about">JOIN NOW</a>
           </Button>
-          <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#FFFFFF] transform transition duration-500 hover:scale-110">
+          <Button id="btn" variant="gradient" size="sm" className="p-4 mx-4 text-black text-base bg-[#FFFFFF] transform transition duration-500 hover:scale-110" data-aos="zoom-in-down" data-aos-offset="100" data-aos-duration="1000">
             <a href="#freeT">Free Tshirt</a>
           </Button>
         </div>

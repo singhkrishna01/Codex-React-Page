@@ -32,6 +32,7 @@ import {
 import Logo1 from "../assets/codex.png"
 import Logo2 from "../assets/codex-black.png"
 import { GoBook } from "react-icons/go";
+import { FaBlackberry } from "react-icons/fa6";
 
 const navListMenuItems1 = [
   {

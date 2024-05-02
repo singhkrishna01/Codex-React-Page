@@ -11,7 +11,7 @@ const About2 = () => {
                         <h1>Learning with a Mentor</h1>
                         <h3>The teaching team will assist specifically and intensively so that if participants experience obstacles in learning will be personally assisted directly.</h3>
                         <Button id="btn" variant="gradient" size="sm" className="text-black text-base bg-[#00FFFF] font-medium normal-case transform transition duration-500 hover:scale-110">
-                                What's our Benefit?
+                                <a href="#benefits">What's our Benefit?</a>
                         </Button>
                 </div>
                 <div className="image" data-aos="fade-left">

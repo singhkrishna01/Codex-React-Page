@@ -12,7 +12,7 @@ import Footer from "./components/Footer"
 function App() {
   
   return (
-    <>
+    <div style={{overflowX: "hidden"}}>
       <Header />
       <TechList />
       <About />
@@ -21,7 +21,7 @@ function App() {
       <FreeTshirt />
       <Testimonials />
       <Footer />
-    </>
+    </div>
   )
 }
 

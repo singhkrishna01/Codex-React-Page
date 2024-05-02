@@ -20,7 +20,7 @@ const Testimonials = () => {
           review={"I'm incredibly grateful for the React course from Codex. The content was well-structured and the hands-on projects were invaluable. The instructors' clear explanations made complex concepts easy to understand."}
           img={<img alt="Man" src={d} className="h-14 w-14 rounded-full object-cover" />}
           star={4}
-          anim={"fade-right"}/>
+          anim={"zoom-in"}/>
 
           <TestBox 
           name={"Linda Swayne"}
@@ -34,7 +34,7 @@ const Testimonials = () => {
           review={"AWS course exceeded my expectations. The content was comprehensive, and the hands-on experience was truly valuable. The instructors' expertise made complex AWS concepts understandable, and the support from the community was fantastic."}
           img={<img alt="Man" src={h} className="h-14 w-14 rounded-full object-cover" />}
           star={4}
-          anim={"fade-left"}/>
+          anim={"zoom-in"}/>
         </div>
       </div>
     </Wrapper>
