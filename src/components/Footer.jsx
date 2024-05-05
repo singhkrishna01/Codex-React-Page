@@ -45,7 +45,8 @@ const Footer = () => {
             <div className="footer-social--icons lg:scale-105">
               <div>
                 <a
-                  href="https://kshitijsinghbisht.netlify.app/"
+                  href="https://www.linkedin.com/in/krishnasingh20/
+                  "
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -54,7 +55,7 @@ const Footer = () => {
               </div>
               <div>
                 <a
-                  href="https://twitter.com/stoickshitij"
+                  href="https://twitter.com/Krishnasingh_99"
                   target="_blank"
                   rel="noreferrer"
                 >
